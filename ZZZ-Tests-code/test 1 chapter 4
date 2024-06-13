@@ -1,0 +1,95 @@
+console.log(typeof 17);
+console.log(typeof "3.2");
+// quotes make data type string 
+console.log("Bruce's beard");
+//dont mix apostorphies with "single" quotation marks
+console.log(42000);
+console.log(42,000);
+console.log(0000000);
+//dont use commas to make numbers easier to read as it seems to be used to seperate data values and 100 zeroes is still 0
+console.log(42, 17, 56, 34, 11, 4.35, 32);
+console.log(3.4, "hello", 45);
+// console will log mixed data types
+//a single letter is still just a string
+console.log(Number("2345"));
+console.log(typeof Number("2345"));
+console.log(Number(17));
+//number conerts strings into numbers but only if they are not letter based
+//    console.log(Number("23bottles"));  example for letter based number conversion that will not work
+console.log(String(17));
+console.log(String(123.45));
+console.log(typeof String(123.45));
+//same as number but for 
+
+// spaces in number ie number(1 1) will result in an error
+
+
+console.log("Hello, World!");
+let message = "Hello, World!";
+console.log(message);
+//these two are the same result 
+let message2 = "What's up, Doc?";
+let n = 17;
+let pi = 3.14159;
+
+console.log(message2);
+console.log(n);
+console.log(pi);
+// vars can be used in other functions
+
+
+let day = "Thursday";
+day = 32.5;
+day = 19;
+console.log(day);
+// only the most recent assigned value for the var is used
+// making a variable is declaring it assigning a value is intializing 
+// constants can not be changed 
+
+let x = 5;
+const y = 3.14;
+let z = y * x ** 2;
+console.log(z);
+// declared and initialized x constant as y and var y
+
+// dont use const in variable names
+
+let sum = 1 + 2;
+console.log(sum);
+//java script can do math
+
+console.log(2 + 3);
+//add
+console.log(2 - 3);
+//sub
+console.log(2 * 3);
+//multi
+console.log(2 ** 3);
+//expo
+console.log(3 ** 2); //NICE
+//also expo
+
+// the right-most ** operator is applied first
+console.log(2 ** 3 ** 2)
+// use parentheses to force the order you want
+console.log((2 ** 3) ** 2)
+//free notes
+console.log(16 - 2 * 5 / 3 + 1)
+//math pemdas
+console.log(1 + 5 % 3);
+// % is like dividing once then giving the remainder?
+let sx = 1;
+sx = sx + 1;
+
+console.log(sx);
+//console keep most recent value
+
+let tx = 1;
+tx += 1;
+
+console.log(tx);
+// += adds the value of itsself to number
+
+
+
+
