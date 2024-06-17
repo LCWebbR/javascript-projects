@@ -1,0 +1,127 @@
+console.log("BOOLEANS")
+console.log(true);
+console.log(typeof true);
+console.log(typeof false);
+console.log(false);
+console.log(Number())
+console.log(Number(1234))
+
+// console will log objects
+console.log(console.log(console.log(Number(1))))
+//hmmmmm it didnt loop like i thought it might
+
+console.log(typeof true);
+console.log(typeof "true");
+
+// pretty obvious 
+
+console.log(Boolean("true"));
+console.log(Boolean("TRUE"));
+console.log(Boolean(0));
+console.log(Boolean(1));
+console.log(Boolean(''));
+console.log(Boolean('LaunchCode'));
+// maybe empty string are false and 0 is false both by default without parameters?
+console.log(Boolean(3));
+console.log(Boolean('0'));
+console.log(Boolean(""));
+console.log(Boolean(10));
+// seems to be true
+//it could be lack of data
+
+console.log(5 == 5);
+console.log(5 == 6);
+//5 is not 6 this one is easy
+console.log(true == "true");
+// false becuase the they are not the same because of the fact that one is a string and the other is a boolean?
+
+
+console.log("EQUALITY")
+
+console.log(7 == "7");//a
+console.log(0 == false);//b
+console.log(0 == '');//c
+console.log ("4" == (2 * 2)) //d
+console.log (7 === (1 * 7))//e
+//a true. its javascript convert data types with == to the same data type to compare if they are true
+//b true because false = 0 in JS
+//c because both are false or no data?
+//d same as a
+//e same as a
+
+//AND STATMENTS &&
+console.log(7 > 5 && 5 > 3);
+console.log(7 > 5 && 2 > 3);
+console.log(2 > 3 && 'dog' === 'cat');
+//true
+//false 2 not greater 
+// false string not the same and 2 not greater
+console.log(4 > 3 && 'cat' === 'cat');
+// works if the same
+
+//OR STATMENTS ||
+console.log(7 > 5 || 5 > 3);
+console.log(7 > 5 || 2 > 3);
+console.log(2 > 3 || 'dog' === 'cat');
+//true both are true
+//true one is true
+//false both false
+
+//Logical not 
+
+console.log(!true);
+console.log(!false);
+
+//reverses the bloolean value
+
+console.log( !(5 > 7) );
+console.log( !('dog' === 'cat') );
+
+// true because false 
+//also true because false
+
+//CONDITIONALS
+//let billHasBeenPaid = false;
+
+//if (!billHasBeenPaid) {
+ //  console.log("Your bill is due soon!");
+//}
+
+//if (billHasBeenPaid) {
+  //  console.log("Your bill is due soon!");
+ //}
+
+ //num = 6
+// if (num % 2 === 0 && num > 3) {
+  //  console.log(num, "is even");
+ //   console.log(num, "is greater than 3");
+ //}
+
+ let billHasBeenPaid = true;
+
+if (!billHasBeenPaid) {
+   console.log("Your bill is due soon!");
+} else {
+   console.log("Your payments are up to date.");
+}
+let x = 10;
+let y = 10;
+
+if (x > y) {
+   console.log("x is greater than y");
+} else if (x < y) {
+   console.log("x is less than y");
+} else {
+   console.log("x and y are equal");
+}
+
+//NESTED CONDITIONALS
+let num = 8;
+
+if (num % 2 === 0) {
+   console.log("EVEN");
+}
+
+if (num > 0) {
+   console.log("POSITIVE");
+}
