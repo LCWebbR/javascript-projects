@@ -1,0 +1,13 @@
+//CATAGORIES OF ERRORS
+
+//SYNTAX
+
+//let day = Wednesday;
+//console.log(day;
+//forgot the close para
+
+//Runtime Errors
+//let firstName = ("Jack");
+//console.log(firstname);
+//N is is not lowercase in firstname
+
