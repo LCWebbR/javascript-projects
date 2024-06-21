@@ -1,0 +1,150 @@
+//ARRAYS ARE LIKE STRINGS
+
+//let emptyArray = [];
+// arrays are declared and intiialized like variables
+//let programmingLanguages = ["JavaScript", "Python", "Java", "C#"];
+
+// items in the arrays can be on differnet lines
+
+//let javaScriptFrameworks = [
+    "React",
+    "Angular",
+    "Ember",
+    "Vue"
+//];
+
+let emptyArray = [];
+console.log(emptyArray.length);
+// .length works on arrays
+//let programmingLanguages = ["JavaScript", "Python", "Java", "C#"];
+//console.log(programmingLanguages.length);
+
+
+let grabBag = ["A string value", true, 99, 105.5];
+// array can hold differnet data types at the same time
+
+//WORKING WITH ARRAYS
+
+let programmingLanguages = [
+    "JavaScript", // index 0
+    "Python",     // index 1
+    "Java",       // index 2
+    "C#"          // index 3
+];
+console.log(programmingLanguages[0]);
+console.log(programmingLanguages[3]);
+
+// What will happen when index 4 is requested?
+console.log(programmingLanguages[4]);
+//error? its undefined 
+
+// undefined will occur for any index outside of the arrays range
+
+let javaScriptFrameworks = ["React", "Angular", "Ember"];
+console.log(javaScriptFrameworks);
+
+// Set the value of index 2 to be "Vue"
+javaScriptFrameworks[2] = "Vue";
+
+// Notice the value at index 2 is now "Vue"
+console.log(javaScriptFrameworks);
+
+// arrays are mutable and therefore can be changed unlike strings which are immutable
+let three = 3;
+let testing = [1,true,three,"four"];
+console.log(testing);
+
+
+console.log(testing.includes(1))
+console.log(testing.includes(2))
+// .includes returns true or false based on if the item is in the array
+console.log(testing.indexOf(1))
+console.log(testing.indexOf(2))
+//indexof returns the index number of an item in the array but return -1 in its not in hte array 
+console.log(testing.reverse())
+//reverses the order kinda obvious
+console.log(testing.sort())
+// sorts in increasing or but seems to get messy when deal with multiple data types
+console.log(testing.pop())
+//removes last item and returns it
+console.log(testing.push(true))
+//adds and item to the end of the array
+console.log(testing.shift())
+//removes first item in the array and returns it
+console.log(testing.splice(1,0,1))
+//the first value of splice chooses the starting piint within hte array the second chooses the amount of items to remove and 
+//any after that are added into the array at the selected point
+let testing2 = [false,5,"six"]
+console.log(testing.concat(testing2))
+//combines arrays
+console.log(testing.join())
+let testing4 = testing.concat(testing2)
+//makes items in array a string
+testing4 = testing.slice(1,4,"steve").concat(testing2)
+// slice is splice but for new arrays but it cannot add new items into the array it only coppies items not removes them and stop beofre last number
+console.log(testing4)
+
+//console.log(testing.split())
+
+
+
+//split not working
+let charles = ['coder', 'Tech', 47, 23, 350];
+charles.sort();
+console.log(charles);
+
+
+
+let groceryBag = ['bananas', 'apples', 'edamame', 'chips', 'cucumbers', 'milk', 'cheese'];
+let selectedItems = [];
+
+selectedItems = groceryBag.slice(2, 5).sort();
+console.log(selectedItems);
+
+//MULTI-DIMENSIONAL ARRAYS
+//let shuttleCrews = [
+    ['Robert Gibson', 'Mark Lee', 'Mae Jemison'],
+    ['Kent Rominger', 'Ellen Ochoa', 'Bernard Harris'],
+    ['Eilen Collins', 'Winston Scott',  'Catherin Coleman']
+//];
+
+//console.log(shuttleCrews[0][2]);
+//console.log(shuttleCrews[1][1]);
+//console.log(shuttleCrews[2][1]);
+
+//arrays within arrays works like a regular array kinda just goota choose which array you want first
+
+//multiArrayName[indexOfInnerArray].method(); must use correct format
+
+
+let shuttleCrews = [
+    ['Robert Gibson', 'Mark Lee', 'Mae Jemison'],
+    ['Kent Rominger', 'Ellen Ochoa', 'Bernard Harris'],
+    ['Eilen Collins', 'Winston Scott',  'Catherin Coleman']
+];
+
+let newCrew = ['Mark Polansky', 'Robert Curbeam', 'Joan Higginbotham'];
+
+// Add a new crew array to the end of shuttleCrews
+shuttleCrews.push(newCrew);
+console.log(shuttleCrews[3][2]);
+
+// Reverse the order of the crew at index 1
+shuttleCrews[1].reverse();
+console.log(shuttleCrews[1]);
+let animal = [1,2,3,4,5]
+
+
+let pluralNoun = "dogs" ;
+let name = "steve";
+let verb = "run";
+let adjective = "silly";
+let color = "red";
+
+console.log("JavaScript provides a "+ color +" collection of tools — including " 
+    + adjective + " syntax and " + pluralNoun + " — that allows "+ name +" to "+ verb +" with strings.")
+
+
+    let idk =[ [1,2,3],[4,5,6]];
+    idk[0].push("dance")
+    console.log(idk[0])

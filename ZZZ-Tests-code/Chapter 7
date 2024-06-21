@@ -129,5 +129,9 @@ dsfsdfsdf \n\t
 \tppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
     asdasdsdasd`;
 console.log(pp);
+//back tick has different rules that allows for easier formating for strings
+
+"sad ${pp}"
+// interpolation or template literals no not work with regular quotes
 
 
