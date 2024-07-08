@@ -13,3 +13,27 @@ c) Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
+
+let converter = function (n){
+    
+if (typeof n === "string" )
+        {
+             return  "ARRR";
+        }
+
+else if (typeof n === "number")        
+    {
+       return n * 3;
+        
+    }
+
+    else {
+    return n;
+        }
+   
+}
+
+    let convertermapped = arr.map(converter)
+
+
+console.log(converter(convertermapped))

@@ -53,5 +53,97 @@ console.log("Hold status: " + holdStatus(cargoHold));
 	
 //b). Call your anonymous fuel and cargo functions from within irs.
 
-//c). Use a template literal to return, "Raided _____ kg of fuel from the tanks, and stole ____ and ____ from the cargo hold."
+//c). Use a template literal to return, "Raided _____ kg of fuel from the tanks, and stole ____ and ____ from the cargo hold."*/
+ let stolenfuel = 0
+let nothingtoseehere = function (fuelLevel){
+ 
+ 
+  if ((fuelLevel - 50 ) > 100001)
+    {
+while (fuelLevel > 100001)
+  {
+   
+    stolenfuel += 50
+    fuelLevel -= 50
+    console.log(fuelLevel)
+    console.log(stolenfuel)
+  }
+  return stolenfuel, fuelLevel;
+  
+}
+  else if ((fuelLevel - 50)> 50001 && fuelLevel < 100001)
+    {
+while (fuelLevel > 50001 && fuelLevel < 100001)
+  {
+    
+    
+    stolenfuel += 50
+    fuelLevel -= 50
+    console.log(fuelLevel)
+    console.log(stolenfuel)
+  }
+ return stolenfuel, fuelLevel;
+    }
+   
+    else if ((fuelLevel - 50)> 0 && fuelLevel < 50001)
+      {
+  while (fuelLevel > 0 && fuelLevel < 50001){
+  stolenfuel += 50
+  fuelLevel -= 50
+  console.log(fuelLevel)
+  console.log(stolenfuel)
+  }
+}
+}
+
+console.log(nothingtoseehere(fuelLevel))
+
+let piratedBooty = []
+let mostealimggoingonhere = function (arr) {
+
+  unit = cargoHold.indexOf("AE-35 unit")
+g = cargoHold.indexOf("gold")
+ {
+ 
+
+ piratedBooty.push(cargoHold[g])
+ piratedBooty.push(cargoHold[unit])
+ cargoHold[g] = "More water arghh"
+ cargoHold[unit] = "EVEN MORE water ARGHHH!!!"
+}
+
+
+  return piratedBooty, cargoHold;
+
+
+}
+console.log(cargoHold)
+console.log(mostealimggoingonhere(cargoHold))
+let irs = function (fuelLevel,cargoHold)
+{
+nothingtoseehere(fuelLevel)
+mostealimggoingonhere(cargoHold)
+
+console.log( `Plundered ${stolenfuel} kg of fuel from the tanks, and stole ${piratedBooty[0]} and ${piratedBooty[1]} from the cargo hold matey.` )
+}
+
+irs()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

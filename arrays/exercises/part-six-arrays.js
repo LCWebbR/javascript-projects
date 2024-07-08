@@ -27,3 +27,4 @@ let tdarray = []
 tdarray.push(table)
 tdarray.push(table2)
 console.log(tdarray[1][1][2])
+// lets gooooooooo
