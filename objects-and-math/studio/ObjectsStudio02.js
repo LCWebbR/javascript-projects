@@ -67,4 +67,4 @@ let candidateA = {
  };
  
  let crew = [candidateA,candidateC,candidateE];
- console.log(selectRandomEntry(candidateA))
+ console.log(oxygenExpended(selectRandomEntry(crew)));
