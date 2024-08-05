@@ -12,3 +12,4 @@ if (denominator === 0){
 }
 return numerator / denominator;
 }
+
